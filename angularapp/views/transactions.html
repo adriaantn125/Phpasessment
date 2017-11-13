@@ -1,0 +1,27 @@
+<div class="panel panel-default" ng-init="getbal()">
+		<div class="panel-heading">
+			<h3 class="panel-title">My transaction <div class="push-right">Your balance is R{{bal}}</div></h3>
+		</div>
+		<div class="panel-body" ng-init="getTransactions()">
+					<table class="table table-condensed">
+							<thead>
+									<tr>
+											<th>Discription</th>
+											<th>Payment Method</th>
+											<th>Satus</th>
+											<th>Amount</th>
+											<th>Date</th>
+									</tr>
+							</thead>
+							<tbody>
+						<tr ng-repeat="transaction in transactions">
+								<td>{{transaction.discription}}</td>
+								<td>{{transaction.paymentmethod}}</td>
+								<td style="color:green;">Success</td>
+								<td>R{{transaction.amount}}</td>
+								<td>{{transaction.created_at}}</td>
+						</tr>
+			</tbody>
+		</table>
+		</div>
+	</div>
