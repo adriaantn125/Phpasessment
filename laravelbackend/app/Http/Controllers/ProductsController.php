@@ -73,6 +73,7 @@ class ProductsController extends Controller
         $product->description = $request->input('description');
         $product->price = $request->input('price');
         $product->image = $fileNameToStore;
+        $product->discount = 0;
         $product->save();
 
         return redirect('/products')->with('success','Product Created');
@@ -126,6 +127,7 @@ class ProductsController extends Controller
         $product->title = $request->input('title');
         $product->description = $request->input('description');
         $product->price = $request->input('price');
+        $product->discount = 0;
         $product->save();
 
         return redirect('/products')->with('success','Product Updated');

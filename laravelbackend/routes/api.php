@@ -26,5 +26,6 @@ Route::group(array('prefix' => 'v1', 'before' => 'auth.basic'), function()
     Route::post('users/check', 'UserControllerApi@cool')->name('cool');
     Route::post('transactions/add/{userid}', 'TransactionsControllerApi@store')->name('store');
     Route::get('transactions/{userid}', 'TransactionsControllerApi@index')->name('TransactionIndex');
+    Route::post('transactions/buy/{id}/{amount}/{title}','TransactionsControllerApi@buy')->name('buy');
     //Route::resource('users', 'UsersController');
 });
