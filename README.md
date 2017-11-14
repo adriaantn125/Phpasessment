@@ -2,7 +2,7 @@
 
 This application requires Php 7,Apache and Mysql server.
 
-To deploy the application clone or get the files and public it to your public_html folder, ot htdocs if you are using xampp.
+To deploy the application clone or get the files and publish it to your public_html folder, or htdocs if you are using xampp.
 
 Create a database called laravelbackend and import the provided SQL file (laravelbackend.sql) in the SQL folder.
 
